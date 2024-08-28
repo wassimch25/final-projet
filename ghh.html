@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Gallery</title>
+    <link rel="stylesheet" href="test.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .navbar li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .navbar li a:hover {
+            color: #f1c40f;
+        }
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            border: 5px solid #333;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+        .caption {
+            text-align: center;
+            margin-top: 5px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-weight: bold;
+            background-color: #fff;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Car Shop</div>
+        <ul class="navbar">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="ghh.html">Produits</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <div class="image-container">
+        <div>
+            <img src="M8.jpg" alt="Bmw M8 competition">
+            <div class="caption">Bmw M8 Competition</div>
+        </div>
+        <div>
+            <img src="merda24.jpg" alt="C63 AMG">
+            <div class="caption">C63 AMG</div>
+        </div>
+        <div>
+            <img src="G63.jpg" alt="G63">
+            <div class="caption">G63</div>
+        </div>
+        <div>
+            <img src="x7.jpg" alt="X7">
+            <div class="caption">X7</div>
+        </div>
+        <div>
+            <img src="merdesa.png" alt="Mercedes AMG GT">
+            <div class="caption">Mercedes AMG GT</div>
+        </div>
+        <div>
+            <img src="M50.jpg" alt="BMW M50">
+            <div class="caption">BMW M50</div>
+        </div>
+        <div>
+            <img src="mer.jpg" alt="Brabus Rocket 900">
+            <div class="caption">Brabus Rocket 900</div>
+        </div>
+        <div>
+            <img src="GLS.jpg" alt="GLS">
+            <div class="caption">GLS</div>
+        </div>
+        <div>
+            <img src="bm.jpg" alt="BMW i8">
+            <div class="caption">BMW i8</div>
+        </div>
+        <div>
+            <img src="bently.jpg" alt="Bentley Continental GT">
+            <div class="caption">Bentley Continental GT</div>
+        </div>
+        <div>
+            <img src="rolls.jpg" alt="Rolls-Royce Spectre">
+            <div class="caption">Rolls-Royce Spectre</div>
+        </div>
+        <div>
+            <img src="hhhhh.jpg" alt="Lamborghini GT">
+            <div class="caption">Lamborghini GT</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Contact Us - Car Shop</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .navbar {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .navbar li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .navbar li a:hover {
+            color: #f1c40f;
+        }
+        .contact {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        .inputboite {
+            margin-bottom: 15px;
+        }
+        .inputboite input,
+        .inputboite textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        .inputboite input:focus,
+        .inputboite textarea:focus {
+            border-color: #f1c40f;
+            outline: none;
+        }
+        .inputboite input[type="submit"] {
+            background: #333;
+            color: white;
+            cursor: pointer;
+            border: none;
+            font-weight: bold;
+        }
+        .inputboite input[type="submit"]:hover {
+            background: #f1c40f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Car Shop</a>
+        <ul class="navbar">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="ghh.html">Produits</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <section class="contact" id="contact">
+        <div class="contactform">
+            <form id="form" action="/">
+                <h2>Envoyer un message</h2>
+                <div class="inputboite">
+                    <input type="text" placeholder="Nom" required>
+                </div>
+                <div class="inputboite">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="inputboite">
+                    <textarea placeholder="Message" rows="5" required></textarea>
+                </div>
+                <div class="inputboite">
+                    <input type="submit" value="Envoyer">
+                </div>
+            </form>
+        </div>
+    </section>    
+</body>
+</html>
